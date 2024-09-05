@@ -46,4 +46,6 @@ ORDER BY stay DESC
 ;
 ```
 
+### OUTPUT
+
 ![output](https://github.com/user-attachments/assets/57a69031-7f9c-40ee-9a4c-ecaca8cd39d8)
