@@ -23,27 +23,13 @@ todep	          Total score of depression (PHQ-9 test)
 tosc	          Total score of social connectedness (SCS test)
 toas	          Total score of acculturative stress (ASISS test)
 
+========================================================================================================================================
 
-====================================================================
-====================================================================
+This repository contains the solutions to the SQL Project- Analyzing Students' Mental Health available on DataCamp. 
 
+Project Overview:
+The study found that international students have a higher risk of mental health difficulties than the general population, and that social connectedness (belonging to a social group) and acculturative stress (stress associated with joining a new culture) are predictive of depression.
 
+The project aims to analyze the students data to see how the length of stay (stay) impacts the average mental health diagnostic scores of the international students present in a Japanese University.
 
--- Start coding here...
--- Finding the number of international students and their average scores by length of stay, in descending order of length of stay
-SELECT stay,
-	COUNT (*) AS count_int,
-	ROUND (AVG(todep), 2) AS average_phq,
-	ROUND (AVG(tosc), 2) AS average_scs,
-	ROUND (AVG(toas), 2) AS average_as
-FROM students
-WHERE inter_dom = 'Inter'
-GROUP BY stay
-ORDER BY stay DESC
-;
-
-
-![query](https://github.com/user-attachments/assets/7f83ccbf-0850-4f96-b29b-3c84b574bd99)
-
-
-![output](https://github.com/user-attachments/assets/57a69031-7f9c-40ee-9a4c-ecaca8cd39d8)
+The project's solution and analysis are provided in this file- Solution.md
